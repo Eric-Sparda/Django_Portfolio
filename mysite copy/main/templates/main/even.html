@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even</title>
+  </head>
+  <header>
+    <h1>Even or Odd</h1>
+    <hr />
+  </header>
+  <body>
+    <div>
+      <form method="post">
+        {% csrf_token %} Numbers:
+        <input type="text" name="Numbers" id="" placeholder="List of number" />
+        <button type="submit">Find even numbers</button>
+      </form>
+    </div>
+    <div>
+      <hr />
+      <h2>Result = {{ evens }}</h2>
+    </div>
+  </body>
+</html>
