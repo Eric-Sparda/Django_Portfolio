@@ -2,6 +2,6 @@ from django import forms
 from .models import contact
 
 class contactform(forms.ModelForm):
-    class meta:
+    class Meta:
         model = contact
         fields = ['name', 'email', 'message']
